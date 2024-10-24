@@ -18,7 +18,17 @@ async function getUser(email) {
     return response;
 }
 
+async function get(id) {
+    const response = await prisma.user.findFirst({
+        where: {
+            id: id
+        }
+    });
+    return response;
+}
+
 module.exports = {
     create,
-    getUser
+    getUser,
+    get
 }
