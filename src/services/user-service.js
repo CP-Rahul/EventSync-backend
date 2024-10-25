@@ -35,7 +35,7 @@ async function register(data) {
         throw new AppError("Invalid password", 400);
       }
       const jwtToken = generateToken({
-        id: user._id,
+        id: user.id,
         email: user.email,
       });
       return jwtToken;
