@@ -39,7 +39,6 @@ npx prisma generate
 npm start
 ```
 
-```
 ### Folder Structure 
 
 `src` -> Inside the src folder all the actual source code regarding the project will reside, this will not include any kind of tests.
